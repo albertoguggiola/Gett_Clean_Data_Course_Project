@@ -1,0 +1,34 @@
+Codebook describing the variables in tidy_dataset.txt
+
+All the rows represents a sequence of averaged observables for a given subject doing a given activity.
+
+
+The first two columns identify the subject and the activity done as follows:
+
+ID: integer from 1 to 30 identifying the subject of the given experiment 
+
+activity: character string identifying the activity done by the subject "ID" during the experiment. 
+          The possible activities are the following: "Walking", "Walking_up", "Walking_down", "Sitting", "Standing", "Laying".
+
+
+
+All the other columns are the averaged values of several registered features for any given subject and any given activity. 
+The registered features are described by abbreviations, that can be read as follows:
+
+The initial letter is a "t" or a "f" if the corresponding feature is respectively in the "time" or "frequency" domain.
+
+"BodyAcc" and "GravityAcc" refer respectively to the part of the measured acceleration imputable to the subject mouvement or to the gravity.
+
+The suffix "Mag" refers to the magnitude of the corresponding 3-dimensional vector, calculated using a Euclidean norm.
+
+The features whose name comprehend the part "Gyro" has been measured by making use of a gyroscope.
+
+The Jerk signals of some of the variables have been calculated, and are characterized in the dataset by a "Jerk" part of the name.
+
+The columns referring to a specific direction are suffixed by, respectively, a "X", "Y" or "Z".
+
+Finally, the suffix "mean()" and "std()" depends on the fact that the original data (over which the present dataset perform a subsequent average for
+all the (ID, activity) pairs) were means or standard deviations of other raw data, no more reported in this dataset.
+
+
+
